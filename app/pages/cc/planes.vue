@@ -42,14 +42,14 @@
                                 <v-row align="center" class="fill-height">
                                     <v-col align-self="start" class="pa-0" cols="6">
                                         <v-avatar class="profile" size="164">
-                                            <v-img :src="require('@/static/img/cc/'+ i.foto)"></v-img>
+                                            <v-img :src="('/img/cc/'+ i.foto)"></v-img>
 
                                         </v-avatar>
 
                                     </v-col>
                                     <v-col align-self="start" class="pa-1" cols="6">
 
-                                        <v-img max-width="60%" :src="require('@/static/img/'+ i.img)"></v-img>
+                                        <v-img max-width="60%" :src="('/img/'+ i.img)"></v-img>
 
                                     </v-col>
 
@@ -131,7 +131,7 @@
                         <v-divider class="mb-5"></v-divider>
                         <v-card-actions class="justify-center">
                             <v-row justify="center">
-                                <v-btn  class="ma-2"  v-for=" (e,i) in programas" :key="i" :href="require('@/static/comiteCoordinador/' + e.src)">{{ e.year }}</v-btn>
+                                <v-btn  class="ma-2"  v-for=" (e,i) in programas" :key="i" :href="('/comiteCoordinador/' + e.src)">{{ e.year }}</v-btn>
                             </v-row>
                             
 
@@ -146,9 +146,8 @@
                         </v-card-title>
                         <v-divider class="mb-5"></v-divider>
                         <v-card-actions class="justify-center">
-                            <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                             <v-row justify="center">
-                                <v-btn class="ma-2"  v-for="(e,i) in informes" :key="i"  :href="require('@/static/comiteCoordinador/' + e.src)" label color="" max-width="100%">{{ e.year }}</v-btn>
+                                <v-btn class="ma-2"  v-for="(e,i) in informes" :key="i"  :href="('/comiteCoordinador/' + e.src)" label color="" max-width="100%">{{ e.year }}</v-btn>
                             </v-row>
                         </v-card-actions>
                         <v-divider class="mt-5"></v-divider>
