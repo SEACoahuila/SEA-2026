@@ -28,9 +28,7 @@ app
             {{ new Date().getFullYear() }} — <strong> 
                 Secretaría Ejecutiva del Sistema Anticorrupción del Estado de Coahuila de Zaragoza  </strong> 
         </v-card-text>
-        <!-- <v-card-text class="white--text">
-            <a href="https://cpccoahuila.github.io/" class="white--text">Historial de versiones antiguas</a>
-        </v-card-text> -->
+
     </v-card>
 </v-footer>
 </template>
