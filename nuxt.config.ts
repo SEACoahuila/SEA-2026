@@ -16,8 +16,7 @@ export default defineNuxtConfig({
     },
     // Si tu repo es https://github.com/usuario/mi-proyecto
     // Tu baseURL debe ser '/mi-proyecto/'
-    baseURL: process.env.NODE_ENV === 'production' ? '/SEA-2026/' : '/',
-    
+   baseURL: process.env.NODE_ENV === 'production' ? '/' : '/',    
     // Opcional pero recomendado para transiciones suaves en GH Pages
     buildAssetsDir: 'assets', 
   },
