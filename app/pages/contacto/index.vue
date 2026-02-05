@@ -150,7 +150,6 @@ const contactos = [
         type: 'list',
         label: 'Correos de contacto:',
         emails: [
-          'yolanda.montes@cpccoahuila.org.mx',
           'carlos.guzman@cpccoahuila.org.mx',
           'diana.flores@cpccoahuila.org.mx',
           'carlos.franco@cpccoahuila.org.mx',
