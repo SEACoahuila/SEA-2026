@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Ponemos directamente la versión 20
+          node-version: 22 # Ponemos directamente la versión 20
 
       - name: Install dependencies
         run: yarn install
