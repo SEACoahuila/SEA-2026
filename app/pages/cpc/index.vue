@@ -126,32 +126,39 @@ const page = {
 const integrantes = [
     {
         nombre: 'Juan Carlos Guzmán Escobedo',
-        cargo: 'Consejero Presidente del Consejo de Participación Ciudadana.',
+        cargo: 'Consejero Presidente.',
         foto: 'cpc-jcge.jpg',
         img: 'cc-cpc.png',
         mail: 'carlos.guzman@cpccoahuila.org.mx'
     },
     {
         nombre: 'Karla Ivonne Natividad González',
-        cargo: 'Consejera del Consejo de Participación Ciudadana.',
+        cargo: 'Consejera.',
         foto: 'cpc-king.png',
         img: 'cc-cpc.png',
         mail: 'karla.natividad@cpccoahuila.org.mx'
     },
     {
         nombre: 'Carlos Antonio Franco Flores',
-        cargo: 'Consejero del Consejo de Participación Ciudadana.',
+        cargo: 'Consejero.',
         foto: 'cpc-caff.png',
         img: 'cc-cpc.png',
         mail: 'carlos.franco@cpccoahuila.org.mx'
     },
     {
         nombre: 'Diana Marisol Flores Rivera',
-        cargo: 'Consejera del Consejo de Participación Ciudadana.',
+        cargo: 'Consejera.',
         foto: 'cpc-dmfr.png',
         img: 'cc-cpc.png',
         mail: 'diana.flores@cpccoahuila.org.mx'
-    }
+    },
+    {
+        nombre: 'José Ignacio Carrillo Aguirre',
+        cargo: 'Consejero.',
+        foto: 'cpc-jica.png',
+        img: 'cc-cpc.png',
+        mail: 'ignacio.carrillo@cpccoahuila.org.mx'
+    },
 ];
 
 const Valores = [

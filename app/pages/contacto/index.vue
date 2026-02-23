@@ -153,7 +153,8 @@ const contactos = [
           'carlos.guzman@cpccoahuila.org.mx',
           'diana.flores@cpccoahuila.org.mx',
           'carlos.franco@cpccoahuila.org.mx',
-          'karla.natividad@cpccoahuila.org.mx'
+          'karla.natividad@cpccoahuila.org.mx',
+          'ignacio.carrillo@cpccoahuila.org.mx',
         ]
       }
     ],
