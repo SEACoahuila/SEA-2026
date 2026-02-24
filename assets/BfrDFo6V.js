@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./HgGXboyc.js";const r={mounted(){this.$router.push("/transparencia/21-40/")}};function n(c,a,s,i,p,d){return o(),t("h1",null,"Redireccionando...")}const u=e(r,[["render",n]]);export{u as default};

@@ -1,0 +1,574 @@
+<!DOCTYPE html><html  lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style id="vuetify-theme-stylesheet">:root {
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 0,137,123;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-article: 247,248,252;
+      --v-theme-article-overlay-multiplier: 1;
+      --v-theme-bluegreyt: 245,245,245;
+      --v-theme-bluegreyt-overlay-multiplier: 1;
+      --v-theme-cc: 245,245,245;
+      --v-theme-cc-overlay-multiplier: 1;
+      --v-theme-peac: 251,248,238;
+      --v-theme-peac-overlay-multiplier: 1;
+      --v-theme-sei: 245,245,245;
+      --v-theme-sei-overlay-multiplier: 1;
+      --v-theme-seicard: 55,71,79;
+      --v-theme-seicard-overlay-multiplier: 2;
+      --v-theme-revista: 247,237,242;
+      --v-theme-revista-overlay-multiplier: 1;
+      --v-theme-cpc: 237,231,246;
+      --v-theme-cpc-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-theme-on-article: 0,0,0;
+      --v-theme-on-bluegreyt: 0,0,0;
+      --v-theme-on-cc: 0,0,0;
+      --v-theme-on-peac: 0,0,0;
+      --v-theme-on-sei: 0,0,0;
+      --v-theme-on-seicard: 255,255,255;
+      --v-theme-on-revista: 0,0,0;
+      --v-theme-on-cpc: 0,0,0;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 238, 238, 238;
+      --v-theme-on-kbd: 0, 0, 0;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 200,200,200;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 0,0,0;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 66, 66, 66;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .v-theme--myCustomLightTheme {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 0,137,123;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-article: 247,248,252;
+      --v-theme-article-overlay-multiplier: 1;
+      --v-theme-bluegreyt: 245,245,245;
+      --v-theme-bluegreyt-overlay-multiplier: 1;
+      --v-theme-cc: 245,245,245;
+      --v-theme-cc-overlay-multiplier: 1;
+      --v-theme-peac: 251,248,238;
+      --v-theme-peac-overlay-multiplier: 1;
+      --v-theme-sei: 245,245,245;
+      --v-theme-sei-overlay-multiplier: 1;
+      --v-theme-seicard: 55,71,79;
+      --v-theme-seicard-overlay-multiplier: 2;
+      --v-theme-revista: 247,237,242;
+      --v-theme-revista-overlay-multiplier: 1;
+      --v-theme-cpc: 237,231,246;
+      --v-theme-cpc-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-theme-on-article: 0,0,0;
+      --v-theme-on-bluegreyt: 0,0,0;
+      --v-theme-on-cc: 0,0,0;
+      --v-theme-on-peac: 0,0,0;
+      --v-theme-on-sei: 0,0,0;
+      --v-theme-on-seicard: 255,255,255;
+      --v-theme-on-revista: 0,0,0;
+      --v-theme-on-cpc: 0,0,0;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .bg-article {
+      --v-theme-overlay-multiplier: var(--v-theme-article-overlay-multiplier);
+      background-color: rgb(var(--v-theme-article)) !important;
+      color: rgb(var(--v-theme-on-article)) !important;
+    }
+    .bg-bluegreyt {
+      --v-theme-overlay-multiplier: var(--v-theme-bluegreyt-overlay-multiplier);
+      background-color: rgb(var(--v-theme-bluegreyt)) !important;
+      color: rgb(var(--v-theme-on-bluegreyt)) !important;
+    }
+    .bg-cc {
+      --v-theme-overlay-multiplier: var(--v-theme-cc-overlay-multiplier);
+      background-color: rgb(var(--v-theme-cc)) !important;
+      color: rgb(var(--v-theme-on-cc)) !important;
+    }
+    .bg-peac {
+      --v-theme-overlay-multiplier: var(--v-theme-peac-overlay-multiplier);
+      background-color: rgb(var(--v-theme-peac)) !important;
+      color: rgb(var(--v-theme-on-peac)) !important;
+    }
+    .bg-sei {
+      --v-theme-overlay-multiplier: var(--v-theme-sei-overlay-multiplier);
+      background-color: rgb(var(--v-theme-sei)) !important;
+      color: rgb(var(--v-theme-on-sei)) !important;
+    }
+    .bg-seicard {
+      --v-theme-overlay-multiplier: var(--v-theme-seicard-overlay-multiplier);
+      background-color: rgb(var(--v-theme-seicard)) !important;
+      color: rgb(var(--v-theme-on-seicard)) !important;
+    }
+    .bg-revista {
+      --v-theme-overlay-multiplier: var(--v-theme-revista-overlay-multiplier);
+      background-color: rgb(var(--v-theme-revista)) !important;
+      color: rgb(var(--v-theme-on-revista)) !important;
+    }
+    .bg-cpc {
+      --v-theme-overlay-multiplier: var(--v-theme-cpc-overlay-multiplier);
+      background-color: rgb(var(--v-theme-cpc)) !important;
+      color: rgb(var(--v-theme-on-cpc)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light)) !important;
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-article {
+      color: rgb(var(--v-theme-article)) !important;
+    }
+    .border-article {
+      --v-border-color: var(--v-theme-article);
+    }
+    .text-bluegreyt {
+      color: rgb(var(--v-theme-bluegreyt)) !important;
+    }
+    .border-bluegreyt {
+      --v-border-color: var(--v-theme-bluegreyt);
+    }
+    .text-cc {
+      color: rgb(var(--v-theme-cc)) !important;
+    }
+    .border-cc {
+      --v-border-color: var(--v-theme-cc);
+    }
+    .text-peac {
+      color: rgb(var(--v-theme-peac)) !important;
+    }
+    .border-peac {
+      --v-border-color: var(--v-theme-peac);
+    }
+    .text-sei {
+      color: rgb(var(--v-theme-sei)) !important;
+    }
+    .border-sei {
+      --v-border-color: var(--v-theme-sei);
+    }
+    .text-seicard {
+      color: rgb(var(--v-theme-seicard)) !important;
+    }
+    .border-seicard {
+      --v-border-color: var(--v-theme-seicard);
+    }
+    .text-revista {
+      color: rgb(var(--v-theme-revista)) !important;
+    }
+    .border-revista {
+      --v-border-color: var(--v-theme-revista);
+    }
+    .text-cpc {
+      color: rgb(var(--v-theme-cpc)) !important;
+    }
+    .border-cpc {
+      --v-border-color: var(--v-theme-cpc);
+    }
+    .on-article {
+      color: rgb(var(--v-theme-on-article)) !important;
+    }
+    .on-bluegreyt {
+      color: rgb(var(--v-theme-on-bluegreyt)) !important;
+    }
+    .on-cc {
+      color: rgb(var(--v-theme-on-cc)) !important;
+    }
+    .on-peac {
+      color: rgb(var(--v-theme-on-peac)) !important;
+    }
+    .on-sei {
+      color: rgb(var(--v-theme-on-sei)) !important;
+    }
+    .on-seicard {
+      color: rgb(var(--v-theme-on-seicard)) !important;
+    }
+    .on-revista {
+      color: rgb(var(--v-theme-on-revista)) !important;
+    }
+    .on-cpc {
+      color: rgb(var(--v-theme-on-cpc)) !important;
+    }
+</style><style>.menu-header[data-v-1e3ecf09]{background-color:#ffffff0d;transition:background-color .3s}.menu-header[data-v-1e3ecf09]:hover{background-color:#ffffff1a}</style><style>.logos-full-width[data-v-6a51d42d]{background-color:var(--v-theme-surface);width:100%}.logos-wrapper[data-v-6a51d42d]{min-height:50px;transition:background-color .3s ease}.logo-link[data-v-6a51d42d]{display:block;filter:grayscale(.4) opacity(.5);mix-blend-mode:multiply;transition:all .4s cubic-bezier(.23,1,.32,1)}.logo-link[data-v-6a51d42d]:hover{filter:grayscale(0) opacity(1);mix-blend-mode:normal;transform:scale(1.1)}.logo-img[data-v-6a51d42d]{image-rendering:auto}[data-v-6a51d42d] .v-theme--dark .logo-link{filter:grayscale(1) invert(.2) opacity(.7);mix-blend-mode:screen}[data-v-6a51d42d] .v-theme--dark .logo-link:hover{filter:grayscale(0) invert(0) opacity(1)}</style><style>.min-height-vh[data-v-cf6d8bdc]{min-height:70vh}.border-bottom[data-v-cf6d8bdc]{border-bottom:1px solid rgba(0,0,0,.05)}.hover-shadow[data-v-cf6d8bdc]:hover{background-color:#f8f9fa;border-color:#1976d2!important;transform:translate(4px)}.transition-all[data-v-cf6d8bdc]{transition:all .2s ease-in-out}.video-container[data-v-cf6d8bdc]{aspect-ratio:16/9}</style><link rel="stylesheet" href="/assets/entry.6bRPTB7A.css" crossorigin><link rel="stylesheet" href="/assets/default.COLwdtFQ.css" crossorigin><link rel="stylesheet" href="/assets/VRow.yvbehSpX.css" crossorigin><link rel="stylesheet" href="/assets/VToolbar.wByvoxJS.css" crossorigin><link rel="stylesheet" href="/assets/VInput.CPe36i82.css" crossorigin><link rel="stylesheet" href="/assets/forwardRefs.CFFyKv8Z.css" crossorigin><link rel="stylesheet" href="/assets/VSpacer.izdAGX-2.css" crossorigin><link rel="stylesheet" href="/assets/VList.D3UierPF.css" crossorigin><link rel="stylesheet" href="/assets/VDivider.CR_bYEsZ.css" crossorigin><link rel="stylesheet" href="/assets/VSheet.BOaw1GDg.css" crossorigin><link rel="stylesheet" href="/assets/VTooltip.fl0ZvfAg.css" crossorigin><link rel="stylesheet" href="/assets/VChip.B49DIxxv.css" crossorigin><link rel="stylesheet" href="/assets/VAlert.Cx5u1eEf.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/transparencia/LGCG-3/_payload.json?596c9e86-a936-40af-b9c5-04d7c39fa105"><link rel="modulepreload" as="script" crossorigin href="/assets/HgGXboyc.js"><link rel="modulepreload" as="script" crossorigin href="/assets/1WNHp1YE.js"><link rel="modulepreload" as="script" crossorigin href="/assets/Ba4EjnGA.js"><link rel="modulepreload" as="script" crossorigin href="/assets/gg1s-RLc.js"><link rel="modulepreload" as="script" crossorigin href="/assets/NekA2J7-.js"><link rel="modulepreload" as="script" crossorigin href="/assets/BNwx3IhZ.js"><link rel="modulepreload" as="script" crossorigin href="/assets/CC3YQcjm.js"><link rel="modulepreload" as="script" crossorigin href="/assets/BSI5kfSp.js"><link rel="modulepreload" as="script" crossorigin href="/assets/DRS-OM4f.js"><link rel="modulepreload" as="script" crossorigin href="/assets/DST8UlfE.js"><link rel="modulepreload" as="script" crossorigin href="/assets/BOxjEAOs.js"><link rel="modulepreload" as="script" crossorigin href="/assets/DSzD_GIK.js"><link rel="modulepreload" as="script" crossorigin href="/assets/DKbu5ktw.js"><link rel="modulepreload" as="script" crossorigin href="/assets/tezgPqRc.js"><link rel="modulepreload" as="script" crossorigin href="/assets/B0QrjFMg.js"><link rel="modulepreload" as="script" crossorigin href="/assets/D86CRKF0.js"><link rel="modulepreload" as="script" crossorigin href="/assets/jdAvfpbI.js"><link rel="modulepreload" as="script" crossorigin href="/assets/Bskn_d5S.js"><link rel="modulepreload" as="script" crossorigin href="/assets/0C2KwELn.js"><script type="module" src="/assets/HgGXboyc.js" crossorigin></script></head><body><div id="__nuxt"><div class="v-application v-theme--myCustomLightTheme v-layout v-layout--full-height v-locale--is-ltr" style=""><div class="v-application__wrap"><!--[--><div class="v-layout" style="z-index:900;position:relative;overflow:hidden;"><!--[--><header class="v-toolbar v-toolbar--collapse-start v-toolbar--density-default elevation-2 v-theme--myCustomLightTheme v-locale--is-ltr v-app-bar" style="background-color:#1d2730;color:#fff;caret-color:#fff;top:0;z-index:904;transform:translateY(0%);position:fixed;transition:none !important;"><!----><!--[--><div class="v-toolbar__content" style="height:64px;"><!----><!----><!--[--><button type="button" class="v-btn v-btn--icon v-theme--myCustomLightTheme v-btn--density-default v-btn--size-default v-btn--variant-text v-app-bar-nav-icon" style=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><i class="mdi-menu mdi v-icon notranslate v-theme--myCustomLightTheme v-icon--size-default" style="" aria-hidden="true"></i></span><!----><!----></button><div class="v-toolbar-title d-flex align-center" style=""><div class="v-toolbar-title__placeholder"><!----><!--[--><i class="v-icon notranslate v-theme--myCustomLightTheme mr-2" style="font-size:32px;height:32px;width:32px;" aria-hidden="true"><!--[--><!--[--><div class="v-responsive v-img v-img--booting" style="" aria-label="Icono Sea" role="img"><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><!--]--><!--]--></i><span class="text-h6">SEA Coahuila</span><!--]--></div></div><div class="v-spacer" style=""></div><div class="v-input v-input--horizontal v-input--center-affix v-input--density-default v-theme--myCustomLightTheme v-locale--is-ltr v-input--dirty v-switch mt-0 mr-3" style=""><!----><div class="v-input__control"><!--[--><div class="v-selection-control v-selection-control--density-default" style=""><div class="v-selection-control__wrapper" style=""><!--[--><div class="v-switch__track" style=""><!----><!----></div><!--]--><div class="v-selection-control__input"><!--[--><!--[--><input id="switch-v-0-2" aria-disabled="false" aria-label="Modo Oscuro" type="checkbox" value="true"><div class="v-switch__thumb" style=""><!----></div><!--]--><!--]--></div></div><label class="v-label v-label--clickable" style="" for="switch-v-0-2"><!----><!--[--><!--[--><i class="mdi-white-balance-sunny mdi v-icon notranslate v-theme--myCustomLightTheme v-icon--size-default" style="" aria-hidden="true"></i><!--]--><!--]--></label></div><!--]--></div><!----><!----></div><!--]--><!----></div><!--]--><!--[--><!----><!--]--></header><!--[--><nav class="v-navigation-drawer v-navigation-drawer--left v-navigation-drawer--temporary v-theme--dark v-navigation-drawer--mobile elevation-2" style="background-color:#1d2730;color:#fff;caret-color:#fff;left:0;z-index:904;transform:translateX(-100%);position:fixed;transition:none !important;" inert data-v-1e3ecf09 height="100%"><!----><!----><div class="v-navigation-drawer__content"><!--[--><div class="v-list v-list--nav v-theme--dark bg-transparent v-list--density-compact v-list--one-line" style="" tabindex="0" role="list" data-v-1e3ecf09><!--[--><div tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-xl v-list-item--variant-text mb-3 menu-header" style="display:none;" role="listitem" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!----><i class="mdi-view-quilt mdi v-icon notranslate v-theme--dark v-icon--size-default" style="" aria-hidden="true" density="compact"></i><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Minimizar Menú</div><div class="v-list-item-subtitle" style="">Navegación</div><!----></div><div class="v-list-item__append"><!--[--><!--[--><i class="mdi-chevron-left mdi v-icon notranslate v-theme--dark v-icon--size-small" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div></div><hr class="v-divider v-theme--dark mb-2" style="border-style:solid;" aria-orientation="horizontal" role="separator" data-v-1e3ecf09><!--[--><a href="/" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="mdi-home mdi v-icon notranslate v-theme--dark v-icon--size-default text-cyan lighten-1 mr-2" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Inicio</div><!----><!----></div><!----></a><a href="/transparencia" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="mdi-magnify mdi v-icon notranslate v-theme--dark v-icon--size-default text-teal lighten-1 mr-2" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Transparencia</div><!----><!----></div><!----></a><a href="/peac" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="v-icon notranslate v-theme--dark mr-2" style="font-size:24px;height:24px;width:24px;" aria-hidden="true" data-v-1e3ecf09><!--[--><!--[--><div class="v-responsive v-img v-img--booting" style="" aria-label="icono" role="img" data-v-1e3ecf09><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><!--]--><!--]--></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Política Estatal Anticorrupción de Coahuila (PEAC)</div><!----><!----></div><!----></a><a href="/pipeac" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="v-icon notranslate v-theme--dark mr-2" style="font-size:24px;height:24px;width:24px;" aria-hidden="true" data-v-1e3ecf09><!--[--><!--[--><div class="v-responsive v-img v-img--booting" style="" aria-label="icono" role="img" data-v-1e3ecf09><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><!--]--><!--]--></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Programa de Implementación de la PEAC</div><!----><!----></div><!----></a><a href="/sei" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="v-icon notranslate v-theme--dark mr-2" style="font-size:24px;height:24px;width:24px;" aria-hidden="true" data-v-1e3ecf09><!--[--><!--[--><div class="v-responsive v-img v-img--booting" style="" aria-label="icono" role="img" data-v-1e3ecf09><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><!--]--><!--]--></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Sistema Estatal de Información</div><!----><!----></div><!----></a><a href="/hemeroteca" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="v-icon notranslate v-theme--dark mr-2" style="font-size:24px;height:24px;width:24px;" aria-hidden="true" data-v-1e3ecf09><!--[--><!--[--><div class="v-responsive v-img v-img--booting" style="" aria-label="icono" role="img" data-v-1e3ecf09><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><!--]--><!--]--></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Hemeroteca</div><!----><!----></div><!----></a><a href="/publicaciones" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="mdi-comma-circle-outline mdi v-icon notranslate v-theme--dark v-icon--size-default mr-2" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Publicaciones</div><!----><!----></div><!----></a><a href="/cc" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="mdi-account-group mdi v-icon notranslate v-theme--dark v-icon--size-default text-orange lighte-2 mr-2" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Comité Coordinador</div><!----><!----></div><!----></a><a href="/CPC" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="v-icon notranslate v-theme--dark mr-2" style="font-size:24px;height:24px;width:24px;" aria-hidden="true" data-v-1e3ecf09><!--[--><!--[--><div class="v-responsive v-img v-img--booting" style="" aria-label="icono" role="img" data-v-1e3ecf09><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><!--]--><!--]--></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Consejo de Participación Ciudadana</div><!----><!----></div><!----></a><a href="/SE" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="mdi-cogs mdi v-icon notranslate v-theme--dark v-icon--size-default text-pink mr-2" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Secretaría Ejecutiva</div><!----><!----></div><!----></a><a href="/ce" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="mdi-cog mdi v-icon notranslate v-theme--dark v-icon--size-default text-blue-grey mr-2" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Comisión Ejecutiva</div><!----><!----></div><!----></a><a href="/contacto" tabindex="-2" class="v-list-item v-list-item--link v-list-item--nav v-theme--dark v-list-item--density-compact v-list-item--one-line rounded-lg v-list-item--variant-text" style="" aria-selected="false" role="link" data-v-1e3ecf09><!--[--><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span><!--]--><div class="v-list-item__prepend"><!--[--><!--[--><i class="mdi-card-account-phone-outline mdi v-icon notranslate v-theme--dark v-icon--size-default text-cyan darken-3 mr-2" style="" aria-hidden="true" data-v-1e3ecf09></i><!--]--><!--]--><div class="v-list-item__spacer"></div></div><div class="v-list-item__content" data-no-activator><div class="v-list-item-title" style="">Contacto</div><!----><!----></div><!----></a><!--]--><!--]--></div><!--]--></div><!----></nav><!----><!--]--><main class="v-main" style="--v-layout-left:0px;--v-layout-right:0px;--v-layout-top:0px;--v-layout-bottom:0px;transition:none !important;min-height:100vh;"><!--[--><div class="logos-full-width" data-v-6a51d42d><div class="v-sheet v-theme--myCustomLightTheme bg-transparent d-flex align-center justify-center logos-wrapper" style="width:100%;" data-v-6a51d42d><div class="v-row v-row--no-gutters align-center justify-space-between ga-2 ma-0 px-4 w-100" style="" data-v-6a51d42d><!--[--><div class="v-col v-col-auto d-flex justify-center align-center py-0" style="" data-v-6a51d42d><!--[--><!--[--><a aria-describedby="v-tooltip-v-0-7" href="https://www.asecoahuila.gob.mx/" target="_blank" rel="noopener noreferrer" class="logo-link" data-v-6a51d42d><div class="v-responsive v-img v-img--booting logo-img" style="width:40px;" contain data-v-6a51d42d><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></a><!--]--><!----><!--]--></div><div class="v-col v-col-auto d-flex justify-center align-center py-0" style="" data-v-6a51d42d><!--[--><!--[--><a aria-describedby="v-tooltip-v-0-8" href="https://sitio.fgecoahuila.gob.mx/" target="_blank" rel="noopener noreferrer" class="logo-link" data-v-6a51d42d><div class="v-responsive v-img v-img--booting logo-img" style="width:35px;" contain data-v-6a51d42d><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></a><!--]--><!----><!--]--></div><div class="v-col v-col-auto d-flex justify-center align-center py-0" style="" data-v-6a51d42d><!--[--><!--[--><a aria-describedby="v-tooltip-v-0-9" href="http://www.sefircoahuila.gob.mx/" target="_blank" rel="noopener noreferrer" class="logo-link" data-v-6a51d42d><div class="v-responsive v-img v-img--booting logo-img" style="width:40px;" contain data-v-6a51d42d><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></a><!--]--><!----><!--]--></div><div class="v-col v-col-auto d-flex justify-center align-center py-0" style="" data-v-6a51d42d><!--[--><!--[--><a aria-describedby="v-tooltip-v-0-10" href="https://www.pjecz.gob.mx/" target="_blank" rel="noopener noreferrer" class="logo-link" data-v-6a51d42d><div class="v-responsive v-img v-img--booting logo-img" style="width:47.5px;" contain data-v-6a51d42d><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></a><!--]--><!----><!--]--></div><div class="v-col v-col-auto d-flex justify-center align-center py-0" style="" data-v-6a51d42d><!--[--><!--[--><a aria-describedby="v-tooltip-v-0-11" href="http://www.tjacoahuila.org/" target="_blank" rel="noopener noreferrer" class="logo-link" data-v-6a51d42d><div class="v-responsive v-img v-img--booting logo-img" style="width:33.75px;" contain data-v-6a51d42d><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></a><!--]--><!----><!--]--></div><div class="v-col v-col-auto d-flex justify-center align-center py-0" style="" data-v-6a51d42d><!--[--><!--[--><a aria-describedby="v-tooltip-v-0-12" href="https://www.cpccoahuila.org.mx/" target="_blank" rel="noopener noreferrer" class="logo-link" data-v-6a51d42d><div class="v-responsive v-img v-img--booting logo-img" style="width:29px;" contain data-v-6a51d42d><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></a><!--]--><!----><!--]--></div><div class="v-col v-col-auto d-flex justify-center align-center py-0" style="" data-v-6a51d42d><!--[--><!--[--><a aria-describedby="v-tooltip-v-0-13" href="#" target="_blank" rel="noopener noreferrer" class="logo-link" data-v-6a51d42d><div class="v-responsive v-img v-img--booting logo-img" style="width:27px;" contain data-v-6a51d42d><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div></a><!--]--><!----><!--]--></div><!--]--></div></div><hr class="v-divider v-theme--myCustomLightTheme opacity-12" style="border-style:solid;" aria-orientation="horizontal" role="separator" data-v-6a51d42d></div><div class="v-container v-container--fluid v-locale--is-ltr" style=""><!--[--><div class="v-container v-locale--is-ltr min-height-vh py-8" style="" data-v-cf6d8bdc><div class="v-row align-center justify-center min-height-vh" style="" data-v-cf6d8bdc><div class="v-col v-col-12 text-center" style="" data-v-cf6d8bdc><div class="v-progress-circular v-progress-circular--indeterminate v-theme--myCustomLightTheme text-primary" style="width:64px;height:64px;--progress-reveal-duration:900ms;" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-v-cf6d8bdc><svg style="transform:rotate(calc(-90deg + 0deg));" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.666666666666664 42.666666666666664"><circle class="v-progress-circular__underlay" style="" fill="transparent" cx="50%" cy="50%" r="20" stroke-width="2.6666666666666665" stroke-dasharray="125.66370614359172" stroke-dashoffset="0"></circle><circle class="v-progress-circular__overlay" fill="transparent" cx="50%" cy="50%" r="20" stroke-width="2.6666666666666665" stroke-dasharray="125.66370614359172" stroke-dashoffset="125.66370614359172px"></circle></svg><!----></div><div class="mt-4 text-h6 text-grey-darken-1" data-v-cf6d8bdc>Cargando información oficial...</div></div></div></div><!--]--></div><!--]--></main><footer class="v-footer v-theme--myCustomLightTheme elevation-2 pa-0" style="bottom:0;z-index:904;transform:translateY(0px);position:absolute;"><div class="v-card v-card--flat v-theme--myCustomLightTheme v-card--density-default rounded-0 v-card--variant-elevated text-center" style="background-color:#1d2730;color:#fff;caret-color:#fff;width:100%;"><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--myCustomLightTheme v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-text white--text" style=""><!--[--><a href="https://www.facebook.com/seseacoah" class="v-btn v-btn--elevated v-btn--icon v-theme--myCustomLightTheme v-btn--density-default elevation-0 v-btn--size-small v-btn--variant-elevated mx-4 white--text" style="background-color:#1d2730;color:#fff;caret-color:#fff;"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--><i class="mdi-facebook mdi v-icon notranslate v-theme--myCustomLightTheme" style="font-size:25px;height:25px;width:25px;" aria-hidden="true"></i><!--]--><!--]--></span><!----><!----></a><a href="https://twitter.com/seseacoah?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Aseseacoah%7Ctwcon%5Es2" class="v-btn v-btn--elevated v-btn--icon v-theme--myCustomLightTheme v-btn--density-default elevation-0 v-btn--size-small v-btn--variant-elevated mx-4 white--text" style="background-color:#1d2730;color:#fff;caret-color:#fff;"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--><i class="mdi-twitter mdi v-icon notranslate v-theme--myCustomLightTheme" style="font-size:25px;height:25px;width:25px;" aria-hidden="true"></i><!--]--><!--]--></span><!----><!----></a><a href="https://www.youtube.com/@sistemaanticorrupciondeles8877" class="v-btn v-btn--elevated v-btn--icon v-theme--myCustomLightTheme v-btn--density-default elevation-0 v-btn--size-small v-btn--variant-elevated mx-4 white--text" style="background-color:#1d2730;color:#fff;caret-color:#fff;"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--><i class="mdi-youtube mdi v-icon notranslate v-theme--myCustomLightTheme" style="font-size:25px;height:25px;width:25px;" aria-hidden="true"></i><!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-card-text white--text pa-0" style=""></div><hr class="v-divider v-theme--myCustomLightTheme" style="border-style:solid;" aria-orientation="horizontal" role="separator"><div class="v-card-text white--text pa-2" style="">2026 — <strong> Secretaría Ejecutiva del Sistema Anticorrupción del Estado de Coahuila de Zaragoza </strong></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></footer><!--]--></div><!--]--></div></div></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{firebaseApiKey:""},app:{baseURL:"/",buildId:"596c9e86-a936-40af-b9c5-04d7c39fa105",buildAssetsDir:"assets",cdnURL:""}}</script><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/transparencia/LGCG-3/_payload.json?596c9e86-a936-40af-b9c5-04d7c39fa105">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{},true,"/transparencia/LGCG-3",1771947376013]</script></body></html>
