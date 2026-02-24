@@ -1,11 +1,13 @@
 <template>
-  <v-container fluid class="" ">
+  <v-container fluid >
 
     
     <v-container class="">
       <v-row >
         <TitlePages :botones=botones color="#8c323f" title="Política Estatal Anticorrupción"
-        icon="mdi-book-open-page-variant-outline" />
+        icon="mdi-book-open-page-variant-outline"
+        subTitle="PEAC"
+        />
       <v-cols cols="12">
 
       </v-cols>

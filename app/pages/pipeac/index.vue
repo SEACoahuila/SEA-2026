@@ -2,7 +2,7 @@
 <template>
     <v-container>
         <v-row>
-        <TitlePages :color="page.color" :title="page.title" :icon="page.icon"  />
+        <TitlePages :color="page.color" :title="page.title" :icon="page.icon"  subTitle="PIPEAC"/>
 
       <v-col cols="12">
         <v-card class="mt-3 mb-3 pa-6" color="peac" rounded="lg">

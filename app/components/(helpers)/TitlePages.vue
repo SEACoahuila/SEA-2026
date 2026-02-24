@@ -75,18 +75,23 @@
 </template>
 
 <script setup lang="ts">
+const subAlter = "Sistema Estatal Anticorrupción" 
 interface Boton {
   titulo: string;
   doc: string;
 }
 
-const { subTitle = "Sistema Estatal Anticorrupción" } = defineProps<{
+interface props {
   title: string;
   color: string;
   icon: string;
   botones?: Boton[]
   subTitle?: string
-}>();
+}
+
+const props = withDefaults(defineProps<props>(),{
+  subTitle: subAlter
+});
 </script>
 
 <style lang="scss" scoped>

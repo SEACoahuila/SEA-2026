@@ -16,9 +16,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22 # Ponemos directamente la versión 20
+          node-version: 24 # Ponemos directamente la versión 20
 
       - name: Install dependencies
         run: yarn install
