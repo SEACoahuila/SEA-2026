@@ -6,42 +6,10 @@
       <TitlePages :color="page.color" :icon="page.icon" :title="page.title" />
       <v-col cols="12" lg="12">
         
-        <v-card variant="flat" class="rounded-xl border pa-6 mb-8 mt-10" color="article">
-          <v-row>
-            <v-col cols="12" md="6" class="text-center">
-              <h2 :class=" 'text-h4 font-weight-bold mb-4'">Art. 18</h2>
-              <div class="d-flex flex-column gap-2 align-center">
-                <v-btn variant="outlined" color="teal"
-                 href="https://www.plataformadetransparencia.org.mx/" 
-                 block class="mb-2">
-                  <p :class="mobile ? 'text-subtitle-2' : ''">Plataforma Nacional de Transparencia</p>
-                </v-btn>
-                <v-btn variant="outlined" :class="mobile ? 'text-subtitle-2' : ''" color="#00897B" href="https://goo.gl/forms/v9fUknvCjxNUqNzA2" block>
-                  Quejas y sugerencias
-                </v-btn>
-              </div>
-            </v-col>
-            
-            <v-col cols="12" md="6" class="text-center border-s-md">
-              <h2 class="text-h4 font-weight-bold mb-2">Art. 20</h2>
-              <p class="text-body-2 mb-4 text-grey-darken-1">Calendario de información pública de oficio</p>
-              <div class="d-flex flex-wrap justify-center gap-2">
-                <v-chip 
-                  v-for="(e, i) in art20" :key="i" 
-                  link :to="'/transparencia/' + e.to" 
-                  color="#00897B" variant="outlined" label
-                >
-                  {{ e.año }}
-                </v-chip>
-              </div>
-            </v-col>
-          </v-row>
-        </v-card>
-
         <v-card variant="flat" class="rounded-xl border pa-4 pa-md-8 mb-8">
           <v-row justify="center">
             <v-col cols="12" class="text-center mb-6">
-              <h1 class="text-h4 text-md-h2 font-weight-bold text-grey-darken-3 mb-2">Art. 21</h1>
+              <h1 class="text-h4 text-md-h2 font-weight-bold text-grey-darken-3 mb-2">Art. 22</h1>
               <p class="text-subtitle-1 text-grey">Información Pública de Oficio</p>
               <v-divider class="mx-auto border-opacity-50 mt-2" color="primary" width="100" thickness="3"></v-divider>
             </v-col>
@@ -49,7 +17,7 @@
 
           <v-row>
             <v-col 
-              v-for="(fraccion, i) in fracciones" :key="i" 
+              v-for="(fraccion, i) in art22" :key="i" 
               cols="12" sm="6" md="4" lg="3"
             >
               <v-hover v-slot="{ isHovering, props }">
@@ -76,14 +44,58 @@
           </v-row>
         </v-card>
 
+        <v-card variant="flat" class="rounded-xl border pa-6 mb-8 mt-10" color="article">
+          <v-row>
+            <v-col cols="12" md="4" class="text-center border-s-md">
+              <h2 class="text-h4 font-weight-bold mb-2">Art. 40</h2>
+              <div class="d-flex flex-wrap justify-center gap-2">
+                <v-chip 
+                  v-for="(e, i) in art40" :key="i" 
+                  link :to="'/transparencia/' + e.to" 
+                  color="#00897B" variant="outlined" label
+                >
+                  {{ e.titulo }}
+                </v-chip>
+              </div>
+            </v-col>
+            
+            <v-col cols="12" md="4" class="text-center border-s-md">
+              <h2 class="text-h4 font-weight-bold mb-2">Art. 43</h2>
+              <div class="d-flex flex-wrap justify-center gap-2">
+                <v-chip 
+                  v-for="(e, i) in art43" :key="i" 
+                  link :to="'/transparencia/' + e.to" 
+                  color="#00897B" variant="outlined" label
+                >
+                  {{ e.titulo }}
+                </v-chip>
+              </div>
+            </v-col>
+
+                  <v-col cols="12" md="4" class="text-center border-s-md">
+              <h2 class="text-h4 font-weight-bold mb-2">Art. 72</h2>
+              <div class="d-flex flex-wrap justify-center gap-2">
+                <v-chip 
+                  v-for="(e, i) in art72" :key="i" 
+                  link :to="'/transparencia/' + e.to" 
+                  color="#00897B" variant="outlined" label
+                >
+                  {{ e.titulo }}
+                </v-chip>
+              </div>
+            </v-col>
+            
+          </v-row>
+        </v-card>
+
         <v-row>
           <v-col cols="12" md="6">
             <v-card variant="outlined" class="rounded-xl pa-4 mb-4">
               <v-list lines="two">
                 <v-list-subheader class="text-h5 font-weight-bold">Artículos Adicionales</v-list-subheader>
-                <v-list-item to="/transparencia/22-1" prepend-icon="mdi-cash" title="Art. 22" subtitle="Gastos de publicidad" />
+                <v-list-item to="/transparencia/22-1" prepend-icon="mdi-cash" title="" subtitle="Gastos de publicidad" />
                 <v-divider class="my-2"></v-divider>
-                <v-list-item to="/transparencia/70-1" prepend-icon="mdi-table-cog" title="Art. 70" subtitle="Tabla de aplicabilidad" />
+                <v-list-item to="/transparencia/70-1" prepend-icon="mdi-table-cog" title="" subtitle="Tabla de aplicabilidad" />
               </v-list>
             </v-card>
           </v-col>
@@ -100,23 +112,123 @@
           </v-col>
         </v-row>
 
+        <!-- Botón Toggle para Ley Anterior -->
+        <v-row justify="center" class="mt-8 mb-4">
+          <v-col cols="12" md="8" lg="6">
+            <v-hover v-slot="{ isHovering, props: hoverProps }">
+              <v-btn
+                v-bind="hoverProps"
+                @click="showLeyAnterior = !showLeyAnterior"
+                :color="isHovering ? '#597a7f' : '#435d60'"
+                variant="flat"
+                size="large"
+                block
+                class="rounded-xl text-none transition-swing"
+                :elevation="isHovering ? 8 : 2"
+              >
+                <v-icon :class="showLeyAnterior ? 'rotate-180' : ''" class="transition-swing mr-2">
+                  mdi-chevron-down
+                </v-icon>
+                <span class="text-h6 font-weight-medium">
+                  {{ showLeyAnterior ? 'Ocultar' : '' }} Información Adicional - (Ley Anterior)
+                </span>
+                <v-icon :class="showLeyAnterior ? 'rotate-180' : ''" class="transition-swing ml-2">
+                  mdi-chevron-down
+                </v-icon>
+              </v-btn>
+            </v-hover>
+          </v-col>
+        </v-row>
+        
+        <!-- Sección Ley Anterior con transición -->
+        <v-expand-transition>
+          <v-card v-show="showLeyAnterior" variant="flat" class="rounded-xl border pa-4 pa-md-8 mb-8">
+            <v-row justify="center">
+              <v-col cols="12" class="text-center mb-6">
+                <h1 class="text-h4 text-md-h2 font-weight-bold text-grey-darken-3 mb-2">LEY ANTERIOR</h1>
+                <p class="text-subtitle-1 text-grey">Información Pública de Oficio</p>
+                <v-divider class="mx-auto border-opacity-50 mt-2" color="primary" width="100" thickness="3"></v-divider>
+              </v-col>
+            </v-row>
+
+            <v-row>
+              <v-col 
+                v-for="(fraccion, i) in fracciones" :key="i" 
+                cols="12" sm="6" md="4" lg="3"
+              >
+                <v-hover v-slot="{ isHovering, props }">
+                  <v-card
+                    v-bind="props"
+                    :elevation="isHovering ? 8 : 1"
+                    :color="isHovering ? '#416a8e' : 'article'"
+                    class="mx-auto transition-swing rounded-lg cursor-pointer d-flex flex-column align-center justify-center text-center pa-6 fill-height"
+                    :to="'/transparencia/' + fraccion.to"
+                  >
+                    <v-avatar size="56" :color="isHovering ? 'white' : 'blue-grey-lighten-5'" class="mb-4">
+                      <span v-if="!isHovering" class="text-caption font-weight-bold position-absolute top-0 right-0 pa-2">{{ i + 1 }}</span>
+                      <v-icon size="28" :color="isHovering ? 'primary' : 'blue-grey-darken-2'">
+                        {{ fraccion.icon }}
+                      </v-icon>
+                    </v-avatar>
+
+                    <div class="text-body-2 font-weight-medium leading-tight" :class="isHovering ? 'text-white' : 'text-grey-darken-3'">
+                      {{ fraccion.titulo }}
+                    </div>
+                  </v-card>
+                </v-hover>
+              </v-col>
+            </v-row>
+          </v-card>
+        </v-expand-transition>
+
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script setup>
-// Usando Script Setup (estándar en Nuxt 3/4)
+import { ref } from 'vue'
+import { useDisplay } from 'vuetify'
+
+const { mobile } = useDisplay()
+
+// Estado reactivo para el toggle
+const showLeyAnterior = ref(false)
+
 const page = {
   color: '#00897B',
   title: 'Transparencia',
   icon: 'mdi-magnify'
 }
-import { useDisplay } from 'vuetify'
-const { mobile } = useDisplay()
 
 const art20 = [
   { año: 'Calendario de información pública de oficio', to: '20-1' }
+]
+
+const art22 = [
+    { titulo: 'Nombramientos, comisiones y licencias', to: '21-4', icon: 'mdi-folder-account-outline' },
+    { titulo: 'Remuneración mensual', to: '21-5', icon: 'mdi-account-credit-card' },
+    { titulo: 'Viáticos y gastos de representación', to: '21-7', icon: 'mdi-plane-car' },
+    { titulo: 'Mecanismos de solicitudes, opiniones, quejas', to: '21-13', icon: 'mdi-account-tie-voice-outline' },
+    { titulo: 'Instituciones de beneficencia', to: '21-19', icon: 'mdi-bank-outline' },
+    { titulo: 'Presupuesto asignado', to: '21-20', icon: 'mdi-cash-check' },
+    { titulo: 'Calendario de reuniones públicas', to: '21-21', icon: 'mdi-laptop-account' },
+    { titulo: 'Actas de entrega-recepción', to: '21-32', icon: 'mdi-file-document-outline' },
+    { titulo: 'Georreferenciación de obras públicas', to: '21-33', icon: 'mdi-map-marker-question' },
+    { titulo: 'Otra información', to: '21-53', icon: 'mdi-information-variant' }
+]
+
+const art40 = [
+    { titulo: 'Comité de transparencia', to: '21-22', icon: 'mdi-card-search-outline' },
+]
+
+const art43 = [    
+  { titulo: 'Unidad de transparencia', to: '21-22', icon: 'mdi-card-search-outline' },
+
+]
+
+const art72 = [    
+  { titulo: 'Expedientes reservados', to: '21-34', icon: 'mdi-archive-alert-outline' },
 ]
 
 const fracciones = [
@@ -194,5 +306,8 @@ const getLGCGTitle = (n) => {
 }
 .gap-2 {
   gap: 8px;
+}
+.rotate-180 {
+  transform: rotate(180deg);
 }
 </style>
