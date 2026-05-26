@@ -180,6 +180,65 @@ export default {
 
             seccionActas: [
 
+             {
+                    titulo: '2025-2026',
+                    actas: [
+                        {
+                            nombre: 'Primera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1DlALP78pspH3u5e4MIQJsT76YunSrEW6/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Segunda Ordinaria',
+                            link: 'https://drive.google.com/file/d/1jlYfFHMLsoHUz-kmWPu8rxKFbDKRal2k/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Tercera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1gTVWBnISIWNVNxO221ON1kK53HWNvTkh/view?usp=drive_link',
+                        },
+                       
+
+                    ]
+                },
+
+            {
+                    titulo: '2024-2025',
+                    actas: [
+                        {
+                            nombre: 'Primera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1schEoVq_CShdmtC7vvEueZRS2VqvN-iS/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Segunda Ordinaria',
+                            link: 'https://drive.google.com/file/d/1XunQpYXG6P6m5QQCbxw47CoqwFlRGILq/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Tercera Ordinaria',
+                            link: 'https://drive.google.com/file/d/1uZTluvIH8mrnX7TsLcJgyBzX0SsEpBge/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Cuarta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1qluubMvmVGc5VvgRaT7xQiiLjSlrugdu/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Quinta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1FyRMTzpwbyUCQeIZE3HsDjlPyKSmEUQh/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Sexta Ordinaria',
+                            link: 'https://drive.google.com/file/d/1uJz39nh0ie6TA5tHjFO3wfj7oaG3Jfq1/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Séptima Ordinaria',
+                            link: 'https://drive.google.com/file/d/1SNZLRmLxlQ8HyGccksxVIhmmhukkGb5R/view?usp=drive_link',
+                        },
+                        {
+                            nombre: 'Octava Ordinaria',
+                            link: 'https://drive.google.com/file/d/1OvwCWZUza3Gtg5b_BWgIsU-sJO-g4Awj/view?usp=drive_link',
+                        },
+
+                    ]
+                },
+
                 {
                     titulo: '2023-2024',
                     actas: [
