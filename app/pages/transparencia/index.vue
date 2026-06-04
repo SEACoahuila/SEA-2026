@@ -209,11 +209,11 @@ const art22 = [
     { titulo: 'Nombramientos, comisiones y licencias', to: '21-4', icon: 'mdi-folder-account-outline' },
     { titulo: 'Remuneración mensual', to: '21-5', icon: 'mdi-account-credit-card' },
     { titulo: 'Viáticos y gastos de representación', to: '21-7', icon: 'mdi-plane-car' },
-    { titulo: 'Mecanismos de solicitudes, opiniones, quejas', to: '21-13', icon: 'mdi-account-tie-voice-outline' },
+    { titulo: 'Mecanismos de solicitudes, opiniones, quejas', to: '22-4', icon: 'mdi-account-tie-voice-outline' },
     { titulo: 'Instituciones de beneficencia', to: '21-19', icon: 'mdi-bank-outline' },
     { titulo: 'Presupuesto asignado', to: '21-20', icon: 'mdi-cash-check' },
-    { titulo: 'Calendario de reuniones públicas', to: '21-21', icon: 'mdi-laptop-account' },
-    { titulo: 'Actas de entrega-recepción', to: '21-32', icon: 'mdi-file-document-outline' },
+    { titulo: 'Calendario de reuniones públicas', to: '22-7', icon: 'mdi-laptop-account' },
+    { titulo: 'Actas de entrega-recepción', to: '22-8', icon: 'mdi-file-document-outline' },
     { titulo: 'Georreferenciación de obras públicas', to: '21-33', icon: 'mdi-map-marker-question' },
     { titulo: 'Otra información', to: '21-53', icon: 'mdi-information-variant' }
 ]
