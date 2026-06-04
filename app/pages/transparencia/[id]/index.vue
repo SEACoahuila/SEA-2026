@@ -44,7 +44,14 @@
           <v-card-title class="text-center py-4 bg-teal text-white">
             Ubicación de la Unidad de Transparencia
           </v-card-title>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1151.810!" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8376.881255054193!2d-100.95434825194536!3d25.46979672914931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86881331ebb6aadd%3A0x2c4069ae06e6a973!2sSecretar%C3%ADa%20Ejecutiva%20del%20Sistema%20Anticorrupci%C3%B3n%20del%20Estado%20de%20Coahuila%20de%20Zaragoza!5e0!3m2!1ses!2smx!4v1780585619379!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </v-card>
+
+         <v-card v-if="parametro === '43-1'" variant="outlined" color="teal" class="rounded-xl overflow-hidden">
+          <v-card-title class="text-center py-4 bg-teal text-white">
+            Ubicación de la Unidad de Transparencia
+          </v-card-title>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8376.881255054193!2d-100.95434825194536!3d25.46979672914931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86881331ebb6aadd%3A0x2c4069ae06e6a973!2sSecretar%C3%ADa%20Ejecutiva%20del%20Sistema%20Anticorrupci%C3%B3n%20del%20Estado%20de%20Coahuila%20de%20Zaragoza!5e0!3m2!1ses!2smx!4v1780585619379!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
         </v-card>
       </v-col>
 

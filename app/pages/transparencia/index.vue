@@ -219,16 +219,16 @@ const art22 = [
 ]
 
 const art40 = [
-    { titulo: 'Comité de transparencia', to: '21-22', icon: 'mdi-card-search-outline' },
+    { titulo: 'Comité de transparencia', to: '40-1', icon: 'mdi-card-search-outline' },
 ]
 
 const art43 = [    
-  { titulo: 'Unidad de transparencia', to: '21-22', icon: 'mdi-card-search-outline' },
+  { titulo: 'Unidad de transparencia', to: '43-1', icon: 'mdi-card-search-outline' },
 
 ]
 
 const art72 = [    
-  { titulo: 'Expedientes reservados', to: '21-34', icon: 'mdi-archive-alert-outline' },
+  { titulo: 'Expedientes reservados', to: '72-1', icon: 'mdi-archive-alert-outline' },
 ]
 
 const fracciones = [
