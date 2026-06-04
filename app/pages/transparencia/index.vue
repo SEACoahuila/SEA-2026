@@ -93,7 +93,7 @@
             <v-card variant="outlined" class="rounded-xl pa-4 mb-4">
               <v-list lines="two">
                 <v-list-subheader class="text-h5 font-weight-bold">Artículos Adicionales</v-list-subheader>
-                <v-list-item to="/transparencia/22-1" prepend-icon="mdi-cash" title="" subtitle="Gastos de publicidad" />
+                <v-list-item to="/transparencia/22-100" prepend-icon="mdi-cash" title="" subtitle="Gastos de publicidad" />
                 <v-divider class="my-2"></v-divider>
                 <v-list-item to="/transparencia/70-1" prepend-icon="mdi-table-cog" title="" subtitle="Tabla de aplicabilidad" />
               </v-list>
