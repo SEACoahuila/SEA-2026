@@ -39,6 +39,14 @@
             <iframe width="100%" height="450" src="https://www.youtube.com/embed/fKOZ6Ep1Z2w" frameborder="0" allowfullscreen></iframe>
           </div>
         </v-card>
+        <v-card v-if="parametro === '22-4'" variant="outlined" color="primary" class="rounded-xl overflow-hidden">
+          <v-card-title class="text-center py-4 bg-primary text-white">
+            Registro y Solicitud de Acceso
+          </v-card-title>
+          <div class="video-container">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/fKOZ6Ep1Z2w" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </v-card>
 
         <v-card v-if="parametro === '21-22'" variant="outlined" color="teal" class="rounded-xl overflow-hidden">
           <v-card-title class="text-center py-4 bg-teal text-white">
