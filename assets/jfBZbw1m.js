@@ -1,0 +1,1 @@
+import{B as e,h as t}from"./BoNiffJ0.js";import{t as n}from"./BDNMzG2s.js";var r={mounted(){this.$router.push(`/transparencia/21-40/`)}};function i(n,r,i,a,o,s){return e(),t(`h1`,null,`Redireccionando...`)}var a=n(r,[[`render`,i]]);export{a as default};
