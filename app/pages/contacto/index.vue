@@ -134,7 +134,7 @@ const contactos = [
       { icon: 'mdi-phone', text: '(844) 688 2178', type: 'tel' },
       { icon: 'mdi-email', text: 'informacion@seacoahuila.org.mx', type: 'mail' },
       { icon: 'mdi-map-marker', text: 'Blvd. Luis Donaldo Colosio No. 703 Piso 3 Fracc. Valle Real Saltillo, Coahuila. C.P. 25205.', type: 'text' },
-      { icon: 'mdi-clock-outline', text: 'Lun-Jue: 08:30 - 17:00 | Vie: 08:30 - 14:30', type: 'text' }
+      { icon: 'mdi-clock-outline', text: 'Lun-Vie: 09:00 - 16:00 ', type: 'text' }
     ],
     hasMap: true
   },
