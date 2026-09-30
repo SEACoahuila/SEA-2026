@@ -6,12 +6,13 @@
             <PresentationPages :presentacion="page.presentacion" :color="page.color" />
 
             <v-col>
-   
 
-               
-      
+
+
+
                 <v-card class="mt-10 pa-6" elevation="0" color="article">
-                    <div class="text-h4 text-center mb-8 font-weight-light">Miembros que integran la Comisión Ejecutiva</div>
+                    <div class="text-h4 text-center mb-8 font-weight-light">Miembros que integran la Comisión Ejecutiva
+                    </div>
 
                     <v-row>
                         <v-col cols="12" md="4" v-for="(i, index) in integrantes" :key="index">
@@ -55,7 +56,7 @@
 
                                     <v-card-item class="mt-4">
                                         <v-card-title class="text-h6 font-weight-bold text-wrap">{{ i.nombre
-                                            }}</v-card-title>
+                                        }}</v-card-title>
                                         <v-card-subtitle class="text-wrap mt-2" style="opacity: 1; line-height: 1.2;">
                                             {{ i.cargo }}
                                         </v-card-subtitle>
@@ -66,89 +67,68 @@
                     </v-row>
                 </v-card>
 
-    <v-card class="mt-10 pa-4" elevation="2" rounded="lg" color="article">
-    <v-row justify="center" align="center">
-      <v-col cols="12" class="text-center">
-        
-        <v-card-title class="justify-center">
-          <div class="text-xl-h3 text-md-h3 text-h4 mb-5 font-weight-bold">
-            Actas de sesiones
-          </div>
-        </v-card-title>
+                <v-card class="mt-10 pa-4" elevation="2" rounded="lg" color="article">
+                    <v-row justify="center" align="center">
+                        <v-col cols="12" class="text-center">
 
-        <v-card-actions class="justify-center">
-          <v-row justify="center">
-            <v-col 
-              v-for="(e, index) in seccionActas" 
-              :key="index" 
-              cols="12" 
-              class="text-center"
-            >
-              <h2 class="text-h5 mb-2">{{ e.titulo }}</h2>
-              <v-divider class="mb-4 mx-auto" max-width="200"></v-divider>
-              
-              <div class="d-flex flex-wrap justify-center">
-                <v-btn 
-                  v-for="(acta, idx) in e.actas" 
-                  :key="idx"
-                  :href="acta.link" 
-                  class="ma-2 text-none" 
-                  color="blue-grey-darken-4"
-                  variant="outline"
-                  elevation="3"
-                >
-                  {{ acta.nombre }}
-                </v-btn>
-              </div>
-            </v-col>
-          </v-row>
-        </v-card-actions>
+                            <v-card-title class="justify-center">
+                                <div class="text-xl-h3 text-md-h3 text-h4 mb-5 font-weight-bold">
+                                    Actas de sesiones
+                                </div>
+                            </v-card-title>
 
-      </v-col>
-    </v-row>
-  </v-card>
+                            <v-card-actions class="justify-center">
+                                <v-row justify="center">
+                                    <v-col v-for="(e, index) in seccionActas" :key="index" cols="12"
+                                        class="text-center">
+                                        <h2 class="text-h5 mb-2">{{ e.titulo }}</h2>
+                                        <v-divider class="mb-4 mx-auto" max-width="200"></v-divider>
 
-  <v-card class="mt-10 pa-4" elevation="2" rounded="lg" color="article">
-    <v-row justify="center" align="center">
-      <v-col cols="12" class="text-center">
+                                        <div class="d-flex flex-wrap justify-center">
+                                            <v-btn v-for="(acta, idx) in e.actas" :key="idx" :href="acta.link"
+                                                class="ma-2 text-none" color="blue-grey-darken-4" variant="outline"
+                                                elevation="3">
+                                                {{ acta.nombre }}
+                                            </v-btn>
+                                        </div>
+                                    </v-col>
+                                </v-row>
+                            </v-card-actions>
 
-        <v-card-title class="justify-center">
-          <div class="text-xl-h3 text-md-h3 text-h4 font-weight-bold">
-            Acuerdos
-          </div>
-        </v-card-title>
-        
-        <v-divider class="my-4 mx-auto" max-width="300"></v-divider>
+                        </v-col>
+                    </v-row>
+                </v-card>
 
-        <v-card-actions class="justify-center">
-          <v-row justify="center">
-            <v-col 
-              v-for="(e, index) in acuerdos" 
-              :key="index" 
-              cols="12" 
-              class="text-center"
-            >
-              <h2 class="text-h5 mb-2">{{ e.titulo }}</h2>
+                <v-card class="mt-10 pa-4" elevation="2" rounded="lg" color="article">
+                    <v-row justify="center" align="center">
+                        <v-col cols="12" class="text-center">
 
-              <div class="d-flex flex-wrap justify-center">
-                <v-btn 
-                  v-for="(acta, idx) in e.actas" 
-                  :key="idx"
-                  :href="acta.link" 
-                  class="ma-2 text-none"
-                  color="secondary"
-                  variant="elevated"
-                >
-                  {{ acta.nombre }}
-                </v-btn>
-              </div>
-            </v-col>
-          </v-row>
-        </v-card-actions>
+                            <v-card-title class="justify-center">
+                                <div class="text-xl-h3 text-md-h3 text-h4 font-weight-bold">
+                                    Acuerdos
+                                </div>
+                            </v-card-title>
 
-      </v-col>
-    </v-row>
-  </v-card>
+                            <v-divider class="my-4 mx-auto" max-width="300"></v-divider>
+
+                            <v-card-actions class="justify-center">
+                                <v-row justify="center">
+                                    <v-col v-for="(e, index) in acuerdos" :key="index" cols="12" class="text-center">
+                                        <h2 class="text-h5 mb-2">{{ e.titulo }}</h2>
+
+                                        <div class="d-flex flex-wrap justify-center">
+                                            <v-btn v-for="(acta, idx) in e.actas" :key="idx" :href="acta.link"
+                                                class="ma-2 text-none" color="secondary" variant="elevated">
+                                                {{ acta.nombre }}
+                                            </v-btn>
+                                        </div>
+                                    </v-col>
+                                </v-row>
+                            </v-card-actions>
+
+                        </v-col>
+                    </v-row>
+                </v-card>
 
             </v-col>
         </v-row>
@@ -180,7 +160,7 @@ export default {
 
             seccionActas: [
 
-             {
+                {
                     titulo: '2025-2026',
                     actas: [
                         {
@@ -211,12 +191,12 @@ export default {
                             nombre: 'Séptima Ordinaria',
                             link: 'https://drive.google.com/file/d/1rf-kmBsf9Xh2NgzmXSVO9GxsfPMUAtDr/view?usp=drive_link',
                         },
-                       
+
 
                     ]
                 },
 
-            {
+                {
                     titulo: '2024-2025',
                     actas: [
                         {
@@ -420,6 +400,10 @@ export default {
                     titulo: 'Informes',
                     actas: [
                         {
+                            nombre: '2025-2026',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FINFORME%202526CE%20(1).pdf?alt=media&token=47331749-b6f3-43e4-91df-e6a588859cd5',
+                        },
+                        {
                             nombre: '2023-2024',
                             link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FInforme%20CE2023-2024.pdf?alt=media&token=ade966ab-bd5e-4c82-a0d5-71d980b0a5e0',
                         },
@@ -484,7 +468,7 @@ export default {
                     img: 'seac.png',
                     mail: 'elide.acosta@seacoahuila.org.mx'
                 },
-                
+
 
             ]
 
