@@ -1,0 +1,1 @@
+import{B as e,h as t}from"./Cik2DDqW.js";import{t as n}from"#entry";var r={mounted(){this.$router.push(`/transparencia/`)}};function i(n,r,i,a,o,s){return e(),t(`h1`,null,`Redireccionando...`)}var a=n(r,[[`render`,i]]);export{a as default};
