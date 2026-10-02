@@ -403,6 +403,10 @@ export default {
                             nombre: '2025-2026',
                             link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FINFORME%202526CE%20(1).pdf?alt=media&token=47331749-b6f3-43e4-91df-e6a588859cd5',
                         },
+                         {
+                            nombre: '2024-2025',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FCE2025%20(2).pdf?alt=media&token=bf4a63fe-0c4e-4a42-9523-0203890d9979',
+                        },
                         {
                             nombre: '2023-2024',
                             link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FInforme%20CE2023-2024.pdf?alt=media&token=ade966ab-bd5e-4c82-a0d5-71d980b0a5e0',

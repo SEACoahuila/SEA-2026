@@ -156,6 +156,7 @@ export default {
     data() {
         return {
             informes: [
+                { year: '2025-2026', to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfhAGuLD6a522k8FYDufB%2Finforme%20sistema%202025-2026%20ALTA.pdf?alt=media&token=6b790dd0-d635-44df-8411-93a5d0c69a8b' },
                 { year: '2024-2025', to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfhAGuLD6a522k8FYDufB%2Finforme%20sistema%20DIGITAL.pdf?alt=media&token=c9bc8294-d764-4c58-ad2a-467cadf4c032' },
                 { year: '2023-2024', to: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FkyYlvOBrjgH7F3p5TbcE%2FInforme_final_OK%202.pdf?alt=media&token=4f80053e-1392-432a-8eb8-c9c23a528963' },
                 { year: '2022-2023', src: 'informeCC-2023.pdf' },
