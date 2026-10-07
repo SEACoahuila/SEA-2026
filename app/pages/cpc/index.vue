@@ -124,16 +124,10 @@ const page = {
 };
 
 const integrantes = [
-    {
-        nombre: 'Juan Carlos Guzmán Escobedo',
-        cargo: 'Consejero Presidente.',
-        foto: 'cpc-jcge.jpg',
-        img: 'cc-cpc.png',
-        mail: 'carlos.guzman@cpccoahuila.org.mx'
-    },
+    
     {
         nombre: 'Karla Ivonne Natividad González',
-        cargo: 'Consejera.',
+        cargo: 'Consejera Presidenta.',
         foto: 'cpc-king.png',
         img: 'cc-cpc.png',
         mail: 'karla.natividad@cpccoahuila.org.mx'

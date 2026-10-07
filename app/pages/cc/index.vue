@@ -4,13 +4,13 @@ import { PresentationPages } from '../../../.nuxt/components';
         <v-row>
             <TitlePages :color="page.color" :title="page.title" :icon="page.icon" />
 
-            
-            
+
+
             <PresentationPages :presentacion="page.presentacion" :color="page.color" />
             <v-col cols="12">
 
 
-       
+
                 <!-- ? Inicio de card CC -->
                 <v-card class="mt-10 pa-6" elevation="0" color="article">
                     <div class="text-h4 text-center mb-8 font-weight-light">Miembros que integran el comité coordinador
@@ -29,11 +29,11 @@ import { PresentationPages } from '../../../.nuxt/components';
                                     </template>
 
 
-                                    <v-card >
-                                           <v-btn class="text-none rounded-pill" color="indigo-darken-2" variant="outlined"
-                                prepend-icon="mdi-link-variant" border="sm" :href="i.web" link size="small">
-                                Consultar Sitio Web
-                            </v-btn>
+                                    <v-card>
+                                        <v-btn class="text-none rounded-pill" color="indigo-darken-2" variant="outlined"
+                                            prepend-icon="mdi-link-variant" border="sm" :href="i.web" link size="small">
+                                            Consultar Sitio Web
+                                        </v-btn>
                                         <div v-for="(e, index) in i.curriculum" :key="index">
                                             <v-card-title class="bluegreyt">
                                                 {{ e.subtitulo }}
@@ -42,7 +42,8 @@ import { PresentationPages } from '../../../.nuxt/components';
                                             <v-card-text>
                                                 <v-list>
                                                     <v-list-item v-for="(item, i) in e.lista" :key="i" dense>
-                                                        <v-icon>mdi-checkbox-multiple-blank-circle-outline</v-icon> {{ item }}
+                                                        <v-icon>mdi-checkbox-multiple-blank-circle-outline</v-icon> {{
+                                                        item }}
                                                     </v-list-item>
                                                 </v-list>
 
@@ -71,15 +72,15 @@ import { PresentationPages } from '../../../.nuxt/components';
                                         </v-col>
                                         <v-col cols="6" class="d-flex justify-center">
                                             <v-img width="80" :src="`/img/${i.img}`"></v-img>
-                                            
+
                                         </v-col>
-                                        
+
                                     </v-row>
 
                                     <v-card-item class="mt-4">
-                                        
+
                                         <v-card-title class="text-h6 font-weight-bold text-wrap">{{ i.nombre
-                                            }}</v-card-title>
+                                        }}</v-card-title>
                                         <v-card-subtitle class="text-wrap mt-2" style="opacity: 1; line-height: 1.2;">
                                             {{ i.cargo }}
 
@@ -90,13 +91,13 @@ import { PresentationPages } from '../../../.nuxt/components';
                                 </div>
 
                             </v-card>
-                         
+
                         </v-col>
                     </v-row>
                 </v-card>
 
 
-                
+
                 <v-card class="mt-10 pa-4" color="article">
                     <v-col cols="12" align="center">
                         <v-card-title class="justify-center">
@@ -192,33 +193,29 @@ export default {
             integrantes: [
 
                 {
-                    nombre: 'JUAN CARLOS GUZMÁN ESCOBEDO',
-                    cargo: 'Consejero Presidente del Consejo de Participación Ciudadana.',
-                    foto: 'cpc-jcge.jpg',
+                    nombre: 'KARLA IVONNE NATIVIDAD GONZÁLEZ',
+                    cargo: 'Consejera Presidenta del Consejo de Participación Ciudadana.',
+                    foto: 'cpc-king.png',
                     img: 'cc-cpc.png',
                     web: 'http://www.cpccoahuila.org.mx/',
                     curriculum: [{
                         subtitulo: 'Formación Académica',
                         lista: [
-                            'Obtuvo el título de contador público auditor por la Universidad Metropolitana de Coahuila.',
-                            'Cursó la maestría en planeación con acentuación en formulación y evaluación de proyectos por la Facultad de Economía de la Universidad Autónoma de Coahuila.',
-                            'Además, cursó la especialidad en Derecho a la Información, Fiscalización y Combate a la Corrupción en la Academia Interamericana de Derechos Humanos de la Universidad Autónoma de Coahuila.',
+                            ' Egresada de la carrera de Comercio Internacional por el ITESM Campus Saltillo y tiene una maestría en Administración Pública. Su negocio se llama Blwms, y tiene más de 15 años dirigiendola.',
 
                         ]
                     },
                     {
                         subtitulo: 'Experiencia profesional:',
                         lista: [
-                            'El Maestro Guzmán se ha desempeñado tanto en el sector público como en el privado.',
-                            'Contralor, subgerente de control y subgerente de servicios en varias sucursales del Banco Nacional de México.',
-                            'Director de la Unidad Catastral del municipio de Acuña en dos administraciones.',
-                            'Gerente y conductor de programas en reconocida estación de radio en Acuña, Coah.',
-                            'Propietario de Guzmán Despacho Contable en Acuña, Coahuila.',
-                            'Subdirector de Finanzas de los Servicios de Salud de Coahuila.',
-                            'Director de administración de la Academia Interamericana de Derechos Humanos de la UAdeC.',
-                            'Director General de Administración del Tribunal Electoral de Coahuila.',
-                            'A partir de octubre del 2021 se desempeña como consejero de Participación Ciudadana del Sistema Anticorrupción del estado de Coahuila.',
-
+                            'Obtuvo el primer lugar del Premio Estatal de la Juventud y en 2014 el primer lugar del Premio Municipal de la Juventud, ambos en logro emprendedor.',
+                            'Presidió la Comisión de Mujeres Empresarias de Coparmex Coahuila Sureste, espacio para fortalecer a la mujer empresaria y poder brindarle herramientas para su crecimiento.',
+                            'Fue seleccionada para participar en la Exposición “Ellas Hacen Historia”, iniciativa del Senado de la República en conjunto con Facebook México e Instagram, donde se expuso la historia de 10 emprendedoras y de esta forma inspirar a más mujeres a emprender.',
+                            'Formó parte del Consejo de la Asociación de Exatec.',
+                            'Es cofundadora de Kaena, Mujeres con Valor, AC una asociación sin fines de lucro para buscar el crecimiento y desarrollo no solo personal sino profesional de todas las mujeres.',
+                            'Participó en el proceso electoral 2023-2024, como Consejera Electoral Propietaria del 08 Consejo Distrital del Instituto Nacional Electoral en el Estado de Coahuila.',
+                            'Actualmente es Vicepresidenta de Coparmex Coahuila Sureste, y forma parte del Consejo de la Comisión de Mujeres Empresarias y de la Comisión de Desarrollo Democrático, ambas de Coparmex.',
+                            'En Marzo de este año obtuvo el nombramiento como Consejera del Consejo de Participación Ciudadana del Sistema Estatal Anticorrupcion, donde busca lograr el involucramiento de la sociedad en practicas comunes que coadyuven a la disminución de la desconfianza ciudadana en el sector publico y privado.'
 
                         ]
                     }

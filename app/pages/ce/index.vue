@@ -444,16 +444,10 @@ export default {
             ],
 
             integrantes: [
-                {
-                    nombre: 'Karla Ivonne Natividad González',
-                    cargo: 'Cooordinadora de la Comisión Ejecutiva.',
-                    foto: 'cpc-king.png',
-                    img: 'cc-cpc.png',
-                    mail: 'karla.natividad@cpccoahuila.org.mx'
-                },
+              
                 {
                     nombre: 'Carlos Antonio Franco Flores',
-                    cargo: 'Consejero del Consejo de Participación Ciudadana.',
+                    cargo: 'Cooordinador de la Comisión Ejecutiva.',
                     foto: 'cpc-caff.png',
                     img: 'cc-cpc.png',
                     mail: 'carlos.franco@cpccoahuila.org.mx'
@@ -464,6 +458,13 @@ export default {
                     foto: 'cpc-dmfr.png',
                     img: 'cc-cpc.png',
                     mail: 'diana.flores@cpccoahuila.org.mx'
+                },
+                 {
+                    nombre: 'José Ignacio Carrillo Aguirre',
+                    cargo: 'Consejero del Consejo de Participación Ciudadana.',
+                    foto: 'cpc-jica.png',
+                    img: 'cc-cpc.png',
+                    mail: 'ignacio.carrillo@cpccoahuila.org.mx'
                 },
                 {
                     nombre: 'Elidé Alejandrina Acosta Reyes ',
