@@ -126,10 +126,10 @@ export default {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(13)%20(2).png?alt=media&token=b16cf677-5157-49a8-8115-9575451d2851",
                     to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfhAGuLD6a522k8FYDufB%2Finforme%20sistema%202025-2026%20ALTA.pdf?alt=media&token=6b790dd0-d635-44df-8411-93a5d0c69a8b"
                 },
-                {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FEstudiantes%20de%20nivel%20licenciatura%20del%20Estado%20de%20Coahuila%20de%20Zaragoza%20(1).png?alt=media&token=35af42b0-c9ac-4efa-986f-c6164331b326",
-                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FVnwWw7SEUUD2OK14B4p8%2FProyecto%20de%20Convocatoria%20con%20fechas%2016%20julio.pdf?alt=media&token=d0645c9b-453b-4db3-88dc-793e548165f0"
-                },
+                //{
+                //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FEstudiantes%20de%20nivel%20licenciatura%20del%20Estado%20de%20Coahuila%20de%20Zaragoza%20(1).png?alt=media&token=35af42b0-c9ac-4efa-986f-c6164331b326",
+                //    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FVnwWw7SEUUD2OK14B4p8%2FProyecto%20de%20Convocatoria%20con%20fechas%2016%20julio.pdf?alt=media&token=d0645c9b-453b-4db3-88dc-793e548165f0"
+                //},
                 
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(4).png?alt=media&token=c8b01e99-8283-4718-8341-9fafa144fe4a",
