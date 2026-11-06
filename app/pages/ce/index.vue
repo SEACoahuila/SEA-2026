@@ -401,7 +401,7 @@ export default {
                     actas: [
                         {
                             nombre: '2025-2026',
-                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FINFORME%202526CE%20(1).pdf?alt=media&token=47331749-b6f3-43e4-91df-e6a588859cd5',
+                            link: 'https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfbEbn8VAyXgLCRAznLDO%2FINFORME%202526CE%20(2).pdf?alt=media&token=8fe79e68-ab85-407a-bbf3-f049fcf00fa2',
                         },
                          {
                             nombre: '2024-2025',
