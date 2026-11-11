@@ -123,6 +123,10 @@ export default {
                 //    to: "https://www.comisionseacoahuila.mx/procesos/2025/"
                 //},
                 {
+                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(14).png?alt=media&token=5d8e6dd4-ec39-4818-b7ed-3c589cb1e036",
+                    to: "https://www.comisionseacoahuila.mx/procesos/2026/"
+                },
+                {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FGtaPvRPfu8Kt2ycffOHw%2FBanners%20p%C3%A1gina%20web%20(13)%20(2).png?alt=media&token=b16cf677-5157-49a8-8115-9575451d2851",
                     to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FfhAGuLD6a522k8FYDufB%2Finforme%20sistema%202025-2026%20ALTA.pdf?alt=media&token=6b790dd0-d635-44df-8411-93a5d0c69a8b"
                 },
