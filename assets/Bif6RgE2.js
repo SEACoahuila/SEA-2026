@@ -1,0 +1,1 @@
+import{rt as e}from"./CGM66kBv.js";var t=e(`v-spacer`,`div`,`VSpacer`);export{t};
