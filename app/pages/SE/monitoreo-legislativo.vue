@@ -35,6 +35,8 @@
         </v-col>
       </v-row>
 
+      <div class="mt-12"></div>
+
       <div v-for="(seccion, i) in dataModule.secciones" :key="seccion.id" class="mb-12">
         <div class="d-flex align-center mb-6">
           <h2 class="text-h4 font-weight-bold text-blue-grey-darken-4 mr-4">{{ seccion.subtitulo }}</h2>
