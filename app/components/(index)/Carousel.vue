@@ -154,10 +154,10 @@ export default {
                     //to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/InformesCC%2FPROGRAMA%20CC.pdf?alt=media&token=640d3267-ab3a-4b6b-8c1d-94ac9d9f9c8e"
                 //},
               
-                {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2Fgira-municipios-2023.png?alt=media&token=5a4dedfc-1696-49ac-a898-2115c028ff7e",
-                    to: "https://seacoahuila.github.io/comunicados/2023-03-13-capacitacion-municipios/"
-                },
+                //{
+                //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/pagina_web%2Fgira-municipios-2023.png?alt=media&token=5a4dedfc-1696-49ac-a898-2115c028ff7e",
+                //    to: "https://seacoahuila.github.io/comunicados/2023-03-13-capacitacion-municipios/"
+               //},
 
             ],
         }
